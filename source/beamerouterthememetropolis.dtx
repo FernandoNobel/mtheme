@@ -34,6 +34,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage{calc}
 \RequirePackage{pgfopts}
+\RequirePackage{color}
 %    \end{macrocode}
 %
 %
@@ -169,12 +170,12 @@
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
   \metropolis@frametitlestrut@start%
-  \raisebox{\dimexpr0.7ex-2pt}{\rule{10pt}{2pt}}
+    \textcolor{Red}{\raisebox{\dimexpr0.7ex-2pt}{\rule{10pt}{2pt}}}
   \insertframetitle%
   \nolinebreak%
   \metropolis@frametitlestrut@end%
   \hspace{0pt}%
-  \leavevmode\leaders\hrule height 0.7ex depth \dimexpr2pt-0.7ex\hfill\kern\z@
+    \textcolor{Red}{\leavevmode\leaders\hrule height 0.7ex depth \dimexpr2pt-0.7ex\hfill\kern\z@}
   \end{beamercolorbox}%
 }
 \setbeamertemplate{frametitle continuation}{%
