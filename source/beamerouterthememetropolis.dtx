@@ -169,13 +169,12 @@
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
   \metropolis@frametitlestrut@start%
-  \rule{5pt}{2pt}
-  \hspace{2pt}%
+  \raisebox{\dimexpr0.7ex-2pt}{\rule{10pt}{2pt}}
   \insertframetitle%
   \nolinebreak%
   \metropolis@frametitlestrut@end%
   \hspace{0pt}%
-  \leavevmode\leaders\hrule\@height2pt\hfill \kern\z@
+  \leavevmode\leaders\hrule height 0.7ex depth \dimexpr2pt-0.7ex\hfill\kern\z@
   \end{beamercolorbox}%
 }
 \setbeamertemplate{frametitle continuation}{%
