@@ -160,7 +160,7 @@
 \newcommand{\metropolis@frametitlestrut@end}{
   \rule[-\metropolis@frametitle@padding]{0pt}{\metropolis@frametitle@padding}
 }
-\defbeamertemplate{frametitle}{plain}{%
+\defbeamertemplate{frametitle}{plain}{% Titulo de slide normal.
   \nointerlineskip%
   \begin{beamercolorbox}[%
       wd=\paperwidth,%
@@ -169,9 +169,13 @@
       rightskip=\metropolis@frametitle@padding,%
     ]{frametitle}%
   \metropolis@frametitlestrut@start%
+  \rule{5pt}{2pt}
+  \hspace{2pt}%
   \insertframetitle%
   \nolinebreak%
   \metropolis@frametitlestrut@end%
+  \hspace{0pt}%
+  \leavevmode\leaders\hrule\@height2pt\hfill \kern\z@
   \end{beamercolorbox}%
 }
 \setbeamertemplate{frametitle continuation}{%
