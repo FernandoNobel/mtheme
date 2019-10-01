@@ -1,3 +1,6 @@
+# Vim
+.*.swp
+
 # Temporary files
 
 .latex-cache
